@@ -1,0 +1,36 @@
+header,
+.MuiList-root.MuiMenu-list {
+  background-color: #461580 !important;
+  color: #ffffff;
+}
+
+.MuiList-root.MuiMenu-list a,
+header a {
+  color: #efefef !important;
+}
+
+.MuiBox-root {
+  justify-content: flex-end;
+}
+
+.MuiBox-root .MuiLink-root {
+  margin-right: 22px;
+}
+
+.MuiBox-root .MuiLink-root:last-child {
+  margin-right: 0;
+}
+
+.MuiBox-root .MuiLink-root .MuiSvgIcon-root {
+  position: relative;
+  top: 3px;
+  left: 0;
+  margin-right: 3px;
+}
+
+.MuiPaper-root .MuiLink-root .MuiSvgIcon-root {
+  position: relative;
+  top: 3px;
+  left: 0;
+  margin-right: 3px;
+}

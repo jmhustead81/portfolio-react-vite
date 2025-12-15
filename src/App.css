@@ -1,42 +1,85 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  font-family: "Orbitron", sans-serif !important;
+}
+
+p,
+ul,
+li,
+label,
+input,
+textarea,
+.MuiSelect-select {
+  font-family: "Exo 2", sans-serif !important;
+}
+
+html,
+body {
+  background-color: #000000 !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 43px;
+}
+
+h1,
+h2 {
+  text-shadow: 2px 2px 0 #461580 !important;
+  color: #20a0a1 !important;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.menu-anchor {
+  position: relative;
+  bottom: 78px;
+  left: 0;
+  right: 0;
+}
+
+.MuiPaper-root.MuiMenu-paper.MuiPaper-root.MuiPopover-paper {
+  border-radius: 0;
+}
+
+.MuiContainer-root > h1 {
+  margin-top: 30px;
+}
+
+.MuiCard-root {
+  background-color: #9b9ba3 !important;
+  box-shadow: 4px 4px 0 #008081 !important;
+  border-top-left-radius: 24px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 24px !important;
+}
+
+.MuiCardContent-root:last-child {
+  padding-bottom: 16px !important;
+}
+
+.MuiToolbar-root {
+  min-height: auto !important;
+}
+
+.MuiInputBase-root.MuiFilledInput-root:after {
+  border-bottom-color: #018a5c !important;
+}
+
+.MuiButtonBase-root.MuiButton-containedPrimary {
+  background-color: #018a5c !important;
+}
+
+.lg-react-element {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header-icon {
+  position: relative;
+  bottom: -5px;
+  margin-right: 5px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.header-icon path {
+  fill: #20a0a1;
 }

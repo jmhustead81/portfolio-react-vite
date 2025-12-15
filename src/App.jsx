@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "@fontsource/orbitron/400.css";
+import "@fontsource/orbitron/500.css";
+import "@fontsource/orbitron/700.css";
+import "@fontsource/exo-2/400.css";
+import CssBaseline from "@mui/material/CssBaseline";
+import Header from "./Header";
+import About from "./About";
+import Skills from "./Skills";
+import Experience from "./Experience";
+import Education from "./Education";
+import Projects from "./Projects";
+import Contact from "./Contact";
+import Footer from "./Footer";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <CssBaseline />
+      <Header />
+      <About />
+      <Skills />
+      <Experience />
+      <Education />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
-  )
+  );
 }
 
 export default App

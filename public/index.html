@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Jonathan Hustead" />
+    <meta name="description" content="Jonathan Hustead's Online Portfolio" />
+    <meta
+      name="keywords"
+      content="jonathan hustead,front end engineer,front end developer,ui,ui developer,ui engineer,ui designer,ux developer,ux engineer,web developer,web engineer,webmaster,game designer"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png?v=3"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png?v=3"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon-16x16.png?v=3"
+    />
+    <link rel="manifest" href="/site.webmanifest?v=3" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=3" color="#5bbad5" />
+    <link rel="shortcut icon" href="/favicon.ico?v=3" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Jonathan Hustead's Online Portfolio"
+    />
+    <meta
+      name="application-name"
+      content="Jonathan Hustead's Online Portfolio"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Jonathan Hustead's Online Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <noscript>
+      Please enable JavaScript in your browser to view this site properly.
+    </noscript>
+    <root id="root"></root>
+    <script>
+      $(function () {
+        $('a[href*="#"]:not([href="#"])').click(function () {
+          if (
+            window.location.pathname.replace(/^\//, "") ===
+              this.pathname.replace(/^\//, "") &&
+            window.location.hostname === this.hostname
+          ) {
+            var target = $(this.hash);
+            target = target.length
+              ? target
+              : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+              $("html, body").animate(
+                {
+                  scrollTop: target.offset().top,
+                },
+                400
+              );
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
